@@ -1,0 +1,17 @@
+{
+  "name": "electro-cast-youtube",
+  "version": "0.0.1",
+  "description": "Simple microservice for Electro-Cast-Youtube module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i; node index.js"
+  },
+  "engines": {
+    "node": "v6.9.1"
+  },
+  "author": "Michael Daof <michael.ivanhoe@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
