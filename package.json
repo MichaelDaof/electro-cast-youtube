@@ -13,6 +13,7 @@
   "author": "Michael Daof <michael.ivanhoe@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "youtube-search": "^1.0.10"
   }
 }
