@@ -18,7 +18,6 @@ try {
 // Require auth to avoid quota abuse?
 function query(req, res) {
   const search = req.params.search;
-  res.writeHead(200, {"access-control-allow-origin": "*"})
   ytSearch(search, { maxResults: 20, key }, function(err, result) {
     res.json(result)
   })
