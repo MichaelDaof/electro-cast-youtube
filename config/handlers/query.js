@@ -15,11 +15,11 @@ try {
   console.error('You don\'t have a valid source for your developer key. Check your process environment, or if developing locally, you\'ll have to create that file yourself')
   throw e
 }
-
+// Require auth to avoid quota abuse?
 function query(req, res) {
   const search = req.params.search;
+  res.writeHead(200, {"access-control-allow-origin": "*"})
   ytSearch(search, { maxResults: 20, key }, function(err, result) {
-    console.log('results: ', result, err)
     res.json(result)
   })
 }
