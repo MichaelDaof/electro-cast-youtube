@@ -4,10 +4,7 @@
  * 
  * This is basically a Google Developer API key-enabled redirect.
  */
-
-// const key = process.env['YOUTUBE_DEV_KEY'] || require('../../key.json').key;
-console.log('process...', process.env);
-const key = process.env.YOUTUBE_DEV_KEY || 'dud'
+const key = process.env.YOUTUBE_DEV_KEY || require('../../key.json').key;
 
 function query(req, res) {
   const search = req.params.search;
