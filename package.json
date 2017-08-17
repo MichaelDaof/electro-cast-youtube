@@ -4,7 +4,8 @@
   "description": "Simple microservice for Electro-Cast-Youtube module",
   "main": "index.js",
   "scripts": {
-    "start": "npm i; node index.js"
+    "prestart": "npm install",
+    "start": "node index.js"
   },
   "engines": {
     "node": "v6.9.1"
