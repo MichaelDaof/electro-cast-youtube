@@ -4,7 +4,7 @@
  * 
  * This is basically a Google Developer API key-enabled redirect.
  */
-
+const parseResults = require('../../utils/parseResults');
 const ytSearch = require('youtube-search');
 
 let key;
@@ -19,7 +19,7 @@ try {
 function query(req, res) {
   const search = req.params.search;
   ytSearch(search, { maxResults: 20, key }, function(err, result) {
-    res.json(result)
+    res.json(parseResults(result))
   })
 }
 
